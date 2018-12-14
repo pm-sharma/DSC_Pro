@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DSC/title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+
+    <style>
+        .p {display:none;}
+        .x{text-align:center!important}
+        .y{margin-left:auto;margin-right:auto}
+        .y{max-width:980px}
+        .z{margin-top:16px!important;margin-bottom:16px!important}
+    </style>
+</head>
+
+<body>
+
+<h2 class="x"></h2>
+
+<div class="y z" style="max-width:500px">
+    <img class="p" src="Carousel Images/1.png" style="width:100%">
+    <img class="p" src="Carousel Images/2.png" style="width:100%">
+    <img class="p" src="Carousel Images3.png" style="width:100%">
+</div>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
+
+</body>
+</html>
