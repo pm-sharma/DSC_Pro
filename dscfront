@@ -19,7 +19,7 @@
 
 <h2 class="x"></h2>
 
-<div class="y z" style="max-width:500px">
+<div class="y z" style="max-width:100%">
     <img class="p" src="Carousel Images/1.png" style="width:100%">
     <img class="p" src="Carousel Images/2.png" style="width:100%">
     <img class="p" src="Carousel Images3.png" style="width:100%">
